@@ -1,4 +1,4 @@
-FROM librealsense
+FROM darthbubi/librealsense:v2.44.0
 
 ENV DEBIAN_FRONTEND=noninteractive\
     TERM=xterm
