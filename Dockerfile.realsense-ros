@@ -50,7 +50,7 @@ WORKDIR /catkin_ws
 
 RUN mv /bin/sh /bin/sh_tmp && ln -s /bin/bash /bin/sh
 
-RUN cd src && git clone --depth 1 --branch 2.2.24 https://github.com/IntelRealSense/realsense-ros.git && \
+RUN cd src && git clone --depth 1 --branch 2.3.0 https://github.com/IntelRealSense/realsense-ros.git && \
     cd .. && source /opt/ros/${ROS_DISTRO}/setup.bash && catkin build -DCMAKE_BUILD_TYPE=Release
 
 RUN rm /bin/sh && mv /bin/sh_tmp /bin/sh

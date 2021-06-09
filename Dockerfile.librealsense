@@ -25,7 +25,7 @@ RUN apt update \
 
 
 # TOOD: Make tag an argument
-RUN git clone --depth 1 --branch v2.45.0 https://github.com/IntelRealSense/librealsense.git
+RUN git clone --depth 1 --branch v2.47.0 https://github.com/IntelRealSense/librealsense.git
 
 WORKDIR /librealsense
 
